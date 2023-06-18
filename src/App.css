@@ -7,6 +7,14 @@
   grid-template-columns: 1fr;
 }
 
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
 input::placeholder {
   color: #aa88aa;
   font-size: 16px;
@@ -20,6 +28,7 @@ input::placeholder {
 .title-box .title {
   font-size: 20px;
   font-weight: 500;
+  margin: 50px 0 20px 0;
 }
 
 .title-box .desc-box .desc {
@@ -31,6 +40,11 @@ input::placeholder {
 
 .input-box {
   margin-bottom: 30px;
+}
+
+.btn-box .find-link-desc {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /* login-page */
@@ -67,6 +81,7 @@ input::placeholder {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 4fr 1fr;
+  margin-bottom: 470px;
 }
 
 .chat-wrap .kakao-icon {
@@ -93,7 +108,7 @@ input::placeholder {
 .chat-wrap .chat-box .chat-desc {
   color: #aa88aa;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.5px;
   word-spacing: 1px;
   margin: 0;
@@ -124,4 +139,35 @@ input::placeholder {
   height: 20px;
   background: #ff5400;
   margin-left: auto;
+}
+
+.menu-box {
+  border-top: 1px solid #eee;
+  background-color: #f9f9fa;
+}
+
+.menu-box .menu-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+}
+
+.menu-box .menu-list .menu-icon {
+  position: relative;
+}
+.menu-box .menu-list .menu-icon .red-dot {
+  position: absolute;
+  content: "";
+  border-radius: 20px;
+  top: 0;
+  right: 1.9rem;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
+.menu-box .menu-list .menu-icon .menu-icon-chat {
+  position: absolute;
+  top: -5px;
+  right: 1.7rem;
 }

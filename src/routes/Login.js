@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import { HiOutlineMusicNote } from "react-icons/hi";
 import { LuSettings } from "react-icons/lu";
-import { BsChat } from "react-icons/bs";
+import { BsChat, BsThreeDots, BsFillChatFill } from "react-icons/bs";
 import { RiKakaoTalkFill } from "react-icons/ri";
+import { AiOutlineUser } from "react-icons/ai";
 
 const Simplespan = styled.span`
   font-size: 11px;
@@ -46,6 +47,24 @@ const Login = () => {
           <p className="chat-sub-desc">21:22</p>
           <Simplespan>1</Simplespan>
         </div>
+      </div>
+      <div className="menu-box">
+        <ul className="menu-list">
+          <li className="menu-icon">
+            <AiOutlineUser size={25} />
+          </li>
+          <li className="menu-icon">
+            <Simplespan className="menu-icon-chat">1</Simplespan>
+            <BsFillChatFill size={23} />
+          </li>
+          <li className="menu-icon">
+            <RxMagnifyingGlass size={25} />
+          </li>
+          <li className="menu-icon">
+            <BsThreeDots size={25} />
+            <span className="red-dot"></span>
+          </li>
+        </ul>
       </div>
     </div>
   );
