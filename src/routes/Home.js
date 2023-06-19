@@ -19,7 +19,7 @@ const SimpleBtn = styled.button`
   padding: 20px 5px;
   background-color: #f5f5f5;
   border: none;
-  border-radius: 8px;
+  border-radius: 9px;
   margin-bottom: 10px;
 `;
 
